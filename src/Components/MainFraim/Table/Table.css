@@ -1,0 +1,17 @@
+.TTable{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10%,1fr));
+    background-color: #61dafb;
+}
+.TRow{
+    background-color: aliceblue;
+}
+.TCell{
+    background-color: aquamarine;
+}
+
+.basket{
+    height: 50px;
+    width: 50px;
+    background-color: brown;
+}
