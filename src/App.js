@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import TTable from "./Components/MainFraim/Table/Table";
 import {
     BrowserRouter,
     Switch,
@@ -8,11 +7,12 @@ import {
     Routes,
     Link,
 } from 'react-router-dom';
-import TRow from "./Components/MainFraim/Table/Row";
 import {HTML5Backend} from "react-dnd-html5-backend";
 import {DndProvider} from "react-dnd";
+import TTable from "./Components/MainFraim/Table/Table";
 
-function App() {
+async function App() {
+
   return (
     <div className="App">
         <DndProvider backend={HTML5Backend}>

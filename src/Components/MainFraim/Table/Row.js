@@ -14,18 +14,18 @@ const TRow = (props) => {
         })
 
     })
-    const updateArr = (value) => {
-        if(basket.includes(value)){
-            console.log(value)
-            setBasket(basket.filter(function(item) {
-                return item !== value
-            }))
-        }
-    }
+    // const updateArr = (value) => {
+    //     if(basket.includes(value)){
+    //         console.log(value)
+    //         setBasket(basket.filter(function(item) {
+    //             return item !== value
+    //         }))
+    //     }
+    // }
     return (
         <React.Fragment>
             <div className='TRow' ref={dropRef}>
-                {basket.map(pet => <div key={pet.id}><TCell draggable id={pet.id} name={pet.name} updateArr={updateArr}/></div>)}
+                {basket.map(pet => <div key={pet.id}><TCell draggable id={pet.id} name={pet.name}/></div>)}
                 {isOver && <div>Drop Here!</div>}
             </div>
         </React.Fragment>

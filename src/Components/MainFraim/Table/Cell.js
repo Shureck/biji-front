@@ -1,13 +1,13 @@
 import './Table.css'
 import { useDrag } from 'react-dnd'
 
-const TCell = ({ id, name, updateArr}) => {
+const TCell = ({ id, name}) => {
     const [{ isDragging }, dragRef] = useDrag({
         type: 'element',
         item: { id, name },
         collect: (monitor) => ({
             isDragging: monitor.isDragging(),
-            lol: monitor.isDragging() && updateArr(name)
+            // lol: monitor.isDragging() && updateArr(name)
         })
     })
     return (
