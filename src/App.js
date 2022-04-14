@@ -10,8 +10,10 @@ import {
 import {HTML5Backend} from "react-dnd-html5-backend";
 import {DndProvider} from "react-dnd";
 import TTable from "./Components/MainFraim/Table/Table";
+import {AppDragDropDemo} from "./Components/MainFraim/Table/Drop";
+import DataWindow from "./Components/MainFraim/Table/DataWindow";
 
-async function App() {
+function App() {
 
   return (
     <div className="App">
@@ -23,7 +25,7 @@ async function App() {
                         <Routes>
                             <Route path="/" exact element={<div>Rec</div>} />
                             <Route path="/tes" exact element={<div><TTable/></div>} />
-                            <Route path="/teees" exact element={<div>teees</div>} />
+                            <Route path="/teees" exact element={<div><DataWindow/></div>}/>
                         </Routes>
                     </div>
                 </div>
